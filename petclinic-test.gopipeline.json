@@ -13,17 +13,14 @@
   "materials": [
     {
       "type": "git",
-      "attributes": {
         "url": "https://github.com/spring-projects/spring-petclinic.git",
         "destination": "petclinic",
         "filter": null,
         "invert_filter": false,
-        "name": null,
-        "auto_update": false,
+        "auto_update": true,
         "branch": "master",
         "submodule_folder": null,
         "shallow_clone": false
-      }
     }
   ],
   "stages": [
