@@ -61,19 +61,14 @@
           "tasks": [
             {
               "type": "exec",
-              "attributes": {
-                "run_if": [
-                  "passed"
-                ],
-                "on_cancel": null,
-                "command": "mvn",
-                "arguments": [
-                  "clean",
-                  "test",
-                  "-Dtest=org.springframework.samples.petclinic.model.*Tests.java"
-                ],
-                "working_directory": "petclinic"
-              }
+              "on_cancel": null,
+              "command": "mvn",
+              "arguments": [
+                "clean",
+                "test",
+                "-Dtest=org.springframework.samples.petclinic.model.*Tests.java"
+              ],
+              "working_directory": "petclinic"
             }
           ],
           "tabs": [
@@ -102,19 +97,14 @@
           "tasks": [
             {
               "type": "exec",
-              "attributes": {
-                "run_if": [
-                  "passed"
-                ],
-                "on_cancel": null,
-                "command": "mvn",
-                "arguments": [
-                  "clean",
-                  "test",
-                  "-Dtest=org.springframework.samples.petclinic.service.*Tests.java"
-                ],
-                "working_directory": "petclinic"
-              }
+              "on_cancel": null,
+              "command": "mvn",
+              "arguments": [
+                "clean",
+                "test",
+                "-Dtest=org.springframework.samples.petclinic.service.*Tests.java"
+              ],
+              "working_directory": "petclinic"
             }
           ],
           "tabs": [
@@ -143,19 +133,14 @@
           "tasks": [
             {
               "type": "exec",
-              "attributes": {
-                "run_if": [
-                  "passed"
-                ],
-                "on_cancel": null,
-                "command": "mvn",
-                "arguments": [
-                  "clean",
-                  "test",
-                  "-Dtest=org.springframework.samples.petclinic.owner.*Tests.java"
-                ],
-                "working_directory": "petclinic"
-              }
+              "on_cancel": null,
+              "command": "mvn",
+              "arguments": [
+                "clean",
+                "test",
+                "-Dtest=org.springframework.samples.petclinic.owner.*Tests.java"
+              ],
+              "working_directory": "petclinic"
             }
           ],
           "tabs": [
@@ -184,19 +169,14 @@
           "tasks": [
             {
               "type": "exec",
-              "attributes": {
-                "run_if": [
-                  "passed"
-                ],
-                "on_cancel": null,
-                "command": "mvn",
-                "arguments": [
-                  "clean",
-                  "test",
-                  "-Dtest=org.springframework.samples.petclinic.system.*Tests.java"
-                ],
-                "working_directory": "petclinic"
-              }
+              "on_cancel": null,
+              "command": "mvn",
+              "arguments": [
+                "clean",
+                "test",
+                "-Dtest=org.springframework.samples.petclinic.system.*Tests.java"
+              ],
+              "working_directory": "petclinic"
             }
           ],
           "tabs": [
@@ -225,19 +205,14 @@
           "tasks": [
             {
               "type": "exec",
-              "attributes": {
-                "run_if": [
-                  "passed"
-                ],
-                "on_cancel": null,
-                "command": "mvn",
-                "arguments": [
-                  "clean",
-                  "test",
-                  "-Dtest=org.springframework.samples.petclinic.vet.*Tests.java"
-                ],
-                "working_directory": "petclinic"
-              }
+              "on_cancel": null,
+              "command": "mvn",
+              "arguments": [
+                "clean",
+                "test",
+                "-Dtest=org.springframework.samples.petclinic.vet.*Tests.java"
+              ],
+              "working_directory": "petclinic"
             }
           ],
           "tabs": [
