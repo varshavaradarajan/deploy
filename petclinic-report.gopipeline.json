@@ -4,10 +4,8 @@
   "name": "petclinic-reports",
   "template": null,
   "group": "petclinic",
-  "parameters": [
-  ],
-  "environment_variables": [
-  ],
+  "parameters": [],
+  "environment_variables": [],
   "materials": [
     {
       "pipeline": "petclinic",
@@ -24,24 +22,19 @@
       "approval": {
         "type": "success",
         "authorization": {
-          "roles": [
-          ],
-          "users": [
-          ]
+          "roles": [],
+          "users": []
         }
       },
-      "environment_variables": [
-      ],
+      "environment_variables": [],
       "jobs": [
         {
           "name": "report",
           "run_instance_count": null,
           "timeout": null,
           "elastic_profile_id": "docker",
-          "environment_variables": [
-          ],
-          "resources": [
-          ],
+          "environment_variables": [],
+          "resources": [],
           "tasks": [
             {
               "type": "fetch",
@@ -57,7 +50,7 @@
             {
               "name": "Report",
               "path": "report/coverage_report/report/index.html"
-}
+            }
           ],
           "artifacts": [
             {
