@@ -54,11 +54,15 @@
             }
           ],
           "tabs": [
+            {
+              "name": "Coverage Report",
+              "path": "report/coverage_report/report/index.html"
+}
           ],
           "artifacts": [
             {
               "source": "test/coverage_report",
-              "destination": "coverage_report",
+              "destination": "report",
               "type": "build"
             }
           ],
