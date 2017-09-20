@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pid=$(ps aux | grep "petclinic" | grep "$SERVER_PORT" | awk '{print $2}')
-if [[ -z "$pid" ]] ; then
+if [[ -n "$pid" ]] ; then
   kill $pid
 fi
 
