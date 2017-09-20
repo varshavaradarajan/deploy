@@ -12,6 +12,8 @@ while [ "$count" -lt 10 ]; do
 done
 
 echo "Deploying at port: $SERVER_PORT"
-java -jar ../dist/*.jar --server.port=$SERVER_PORT & disown
+java -jar ../dist/*.jar --server.port=$SERVER_PORT >deploy.log 2>&1 & disown
 
 sleep 10
+cat deploy.log
+exit 0
