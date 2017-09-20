@@ -1,0 +1,72 @@
+{
+  "label_template": "${COUNT}",
+  "enable_pipeline_locking": false,
+  "name": "petclinic-reports",
+  "template": null,
+  "group": "petclinic",
+  "parameters": [
+  ],
+  "environment_variables": [
+  ],
+  "materials": [
+    {
+      "pipeline": "petclinic",
+      "stage": "package",
+      "type": "dependency"
+    }
+  ],
+  "stages": [
+    {
+      "name": "report",
+      "fetch_materials": true,
+      "clean_working_directory": false,
+      "never_cleanup_artifacts": false,
+      "approval": {
+        "type": "success",
+        "authorization": {
+          "roles": [
+          ],
+          "users": [
+          ]
+        }
+      },
+      "environment_variables": [
+      ],
+      "jobs": [
+        {
+          "name": "report",
+          "run_instance_count": null,
+          "timeout": null,
+          "elastic_profile_id": "docker",
+          "environment_variables": [
+          ],
+          "resources": [
+          ],
+          "tasks": [
+            {
+              "type": "fetch",
+              "pipeline": "petclinic",
+              "stage": "package",
+              "job": "package",
+              "is_source_a_file": false,
+              "source": "coverage_report",
+              "destination": "test"
+            }
+          ],
+          "tabs": [
+          ],
+          "artifacts": [
+            {
+              "source": "test/coverage_report",
+              "destination": "coverage_report",
+              "type": "build"
+            }
+          ],
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "tracking_tool": null,
+  "timer": null
+}
